@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokumen</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <main id="profile">
+        <section>
+            <h2>{{ name }}</h2>
+            <p>{{ about }}</p>
+            <p>Website : <a v-bind:href="website.link" target="blank">{{ website.display }}</a></p>
+            <span>{{ claps }} Claps</span><button @click="clap">Clap</button>
+            <span>{{ followers }} Followers</span><button @click.once="follow">Follow</button>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
