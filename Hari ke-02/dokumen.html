@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokumen</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="style.css" src="style.css">
+</head>
+<body>
+    <main id="profile">
+        <section>
+            <h2>{{ name }}</h2>
+            <p>{{ about }}</p>
+            <p>Website : <a v-bind:href="website.link" target="blank">{{ website.display }}</a></p>
+            <span>{{ claps }} Claps </span><button @click="clap">Clap</button>
+            <span>{{ followers }} Followers </span>
+            <button @click="follow" v-bind:class="folComp" v-if="!following">Follow</button>
+            <button @click="follow" v-bind:class="folComp" v-else-if="following">Following</button>
+        </section>
+        <section>
+            <h2>Skills and Tools</h2>
+            <template v-for="tool in tools">
+                <article class="card">
+                    <p><strong>{{ tool.name }}</strong> <i>v{{ tool.version }}</i></p>
+                    <p>Skill Level : {{ tool.level }}</p>
+                </article>
+            </template>
+        </section>
+    </main>
+    <script src="dokumen.js"></script>
+</body>
+</html>
