@@ -11,6 +11,16 @@ Hal yang saya pelajari :
 * Nesting components
 * Scoped CSS components
 
+# Hari ke-4
+Hal yang saya pelajari :
+* Props
+* Primitive vs reference
+* Event (child to parrent)
+* Event Bus
+* Life-Cycle-Hooks
+* Slots
+* Dynamic Components
+
 # Build Setup
 
 ## install dependencies

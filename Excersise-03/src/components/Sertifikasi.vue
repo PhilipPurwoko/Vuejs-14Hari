@@ -30,14 +30,13 @@
 
 <style scoped>
     .card-container{
-        display:grid;
-        grid-template-columns:auto auto auto auto auto;
+        display:flex;
+        flex-wrap: wrap;
     }
     .main-section{
         text-align: center;
     }
     .card{
-        width: 75%;
         margin: 10px;
         border: 1px solid black;
         padding: 10px;
