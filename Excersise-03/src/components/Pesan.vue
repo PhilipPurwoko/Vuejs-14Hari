@@ -5,7 +5,7 @@
             <p v-if="msgSent">Message sent</p>
             <section v-else>
                 <label for="name">Your name</label>
-                <input type="text" name="name" v-bind:placeholder="username">
+                <input type="text" name="name">
                 <label for="message">Message</label>
                 <textarea name="message">{{ message }}</textarea>
                 <button @click.once="submit">Kirim</button>
@@ -17,7 +17,6 @@
 <script>
     import { bus } from '../main';
     export default {
-        props:['username'],
         data:function() {
             return {
                 message:'Hello world',
@@ -43,7 +42,7 @@
 <style scoped>
     .main-form{
         margin: auto;
-        width: 30%;
+        width: 300px;
     }
     input, textarea{
         width: 100%;

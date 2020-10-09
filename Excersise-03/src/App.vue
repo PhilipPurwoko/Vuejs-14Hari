@@ -5,7 +5,8 @@
         <impression></impression>
         <sertifikasi></sertifikasi>
         <divider></divider>
-        <pesan v-bind:username="username"></pesan>
+        <pesan></pesan>
+        <jasa></jasa>
         <app-footer></app-footer>
     </main>
 </template>
@@ -19,6 +20,7 @@ import Sertifikasi from './components/Sertifikasi.vue'
 import Impression from './components/Impression.vue'
 import Pesan from './components/Pesan.vue'
 import Divider from './components/Divider.vue'
+import Jasa from './components/Jasa.vue'
 
 export default {
     components:{
@@ -28,12 +30,8 @@ export default {
         'sertifikasi':Sertifikasi,
         'impression':Impression,
         'pesan':Pesan,
-        'divider':Divider
-    },
-    data:function() {
-        return {
-            username:'Philip'
-        };
+        'divider':Divider,
+        'jasa':Jasa
     }
 };
 </script>

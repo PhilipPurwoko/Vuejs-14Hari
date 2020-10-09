@@ -28,7 +28,6 @@
 
 <script>
     export default {
-        props:['identitas'],
         data:function() {
             return {
                 nama:'Philip Purwoko',

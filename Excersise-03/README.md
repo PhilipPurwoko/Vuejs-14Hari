@@ -21,6 +21,20 @@ Hal yang saya pelajari :
 * Slots
 * Dynamic Components
 
+# Hari ke-5
+Pada hari kelima saya tidak belajar apapun, dikarenakan padatnya jadwal kuliah ditambah badan saya yang tidak fit sehingga saya putuskan untuk berlibur dari depan layar komputer.
+
+# Hari ke-6
+Hal yang saya pelajari :
+* Vuex
+* Central store dengan vuex
+* Computed properties
+* State
+* Getter
+* Mutation
+* Action
+* Mapping Action dan Getter dengan babel
+
 # Build Setup
 
 ## install dependencies
