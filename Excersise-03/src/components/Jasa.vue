@@ -16,8 +16,8 @@
     export default {
         computed:{
             semuaJasa(){
-                return this.$store.state.jasa;
-            }
+                return this.$store.getters.getJasa;
+            },
         }
     };
 </script>

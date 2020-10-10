@@ -5,9 +5,9 @@
             <p v-if="msgSent">Message sent</p>
             <section v-else>
                 <label for="name">Your name</label>
-                <input type="text" name="name">
+                <input type="text" name="name" v-bind:placeholder="username">
                 <label for="message">Message</label>
-                <textarea name="message">{{ message }}</textarea>
+                <textarea name="message" v-model:placeholder="message"></textarea>
                 <button @click.once="submit">Kirim</button>
             </section>
         </fieldset>
@@ -27,6 +27,11 @@
             submit:function(){
                 bus.$emit('msgSubmitted',this.message);
                 console.log(this.message);
+            }
+        },
+        computed:{
+            username(){
+                return this.$store.getters.getUsername;
             }
         },
         created:function(){
