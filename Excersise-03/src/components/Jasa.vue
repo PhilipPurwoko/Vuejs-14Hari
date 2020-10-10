@@ -13,7 +13,7 @@
         </section>
         <section class="card-container">
             <h3>Semua Jasa</h3>
-            <template v-for="jasa in semuaJasa">
+            <template v-for="jasa in getJasa">
                 <article class="card">
                     <p><strong>{{ jasa.nama }}</strong></p>
                     <p>IDR {{ jasa.harga }}</p>
@@ -24,36 +24,30 @@
         <div>
             <h3>Promo</h3>
             <p>Follow saya di instagram dapatkan diskon 20%</p>
-            <p>{{ instagram.username }}</p>
-            <button v-if="following == false"><a @click.once="follow" v-bind:href="instagram.link" v-bind:target="instagram.target">Follow Sekarang</a></button>
-            <p v-else>Followed</p>
+            <p>{{ getInsta.username }}</p>
+            <button><a @click="applyDiskon" v-bind:href="getInsta.link" v-bind:target="getInsta.target">Follow Sekarang</a></button>
         </div>
     </section>
 </template>
 
 <script>
+    import { mapActions } from 'vuex';
+    import { mapGetters } from 'vuex';
+
     export default {
-        data:function(){
-            return {
-                following:false,
-            }
-        },
         computed:{
-            semuaJasa(){
-                return this.$store.getters.getJasa;
-            },
+            ...mapGetters([
+                'getJasa',
+                'getInsta'
+            ]),
             jasaDiskon(){
                 return this.$store.getters.getJasa.filter(jasa=>jasa.diskon);
-            },
-            instagram(){
-                return this.$store.getters.getInsta;
             }
         },
         methods:{
-            follow(){
-                this.following = true;
-                this.$store.dispatch('applyDiskon');
-            }
+            ...mapActions([
+                'applyDiskon'
+            ])
         }
 
     };

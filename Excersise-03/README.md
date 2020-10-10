@@ -35,6 +35,11 @@ Hal yang saya pelajari :
 * Action
 * Mapping Action dan Getter dengan babel
 
+# Hari ke-7
+* Memperbaiki struktur file untuk getter dan store.js
+* Mengimplementasikan Mutation dan Action
+* Menggunakan action dan getter mapping
+
 # Build Setup
 
 ## install dependencies
