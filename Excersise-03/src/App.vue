@@ -3,9 +3,11 @@
         <app-header></app-header>
         <identitas></identitas>
         <impression></impression>
+        <divider></divider>
         <sertifikasi></sertifikasi>
         <divider></divider>
         <pesan></pesan>
+        <divider></divider>
         <jasa></jasa>
         <app-footer></app-footer>
     </main>
