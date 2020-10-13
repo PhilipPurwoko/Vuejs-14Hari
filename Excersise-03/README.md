@@ -40,6 +40,13 @@ Hal yang saya pelajari :
 * Mengimplementasikan Mutation dan Action
 * Menggunakan action dan getter mapping
 
+# Hari ke-8 sd selesai
+Untuk hari ke 8 dan seterusnya, saya tidak meneruskan untuk belajar melalui materi tersebut, melainkan membuat project.
+
+> Belajar untuk membuat project, membuat project untuk belajar
+
+Repository final project : [Code Highlighter](https://github.com/PhilipPurwoko/CodeHighlighter/)
+
 # Build Setup
 
 ## install dependencies
